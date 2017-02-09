@@ -39,7 +39,6 @@
 	//THREE.ImageUtils.loadTexture( "img/ParticleSmoke.png" );
 	//particleImage.src = 'https://ojejpraer.qnssl.com/mengbi.png'; 
 	particleImage.src = 'http://pop.gdsswf.com/admin/images/gouzi.png';
-  	particleImage.style.display = 'none';
 
 	function init() {
 		//alert("message3");
@@ -61,7 +60,7 @@
 			//alert("message");
 			particle = new Particle3D( material);
 			particle.position.x = Math.random() * 2000-1000;
-			
+			particle.rotate = Math.random() * 0-360;
 			particle.position.z = Math.random() * 2000-1000;
 			particle.position.y = Math.random() * 2000-1000;
 			//particle.position.y = Math.random() * (1600-particle.position.z)-1000;
