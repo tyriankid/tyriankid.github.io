@@ -21,7 +21,7 @@
 
   </body>
   <script type="text/javascript">
-	  alert(4);
+	  alert(5);
 	var SCREEN_WIDTH = window.innerWidth;//
 	var SCREEN_HEIGHT = window.innerHeight;
 	var container;
@@ -60,7 +60,7 @@
 			//alert("message");
 			particle = new Particle3D( material);
 			particle.position.x = Math.random() * 2000-1000;
-			particle.rotate = Math.random() * 360;
+			particle.rotate.x = 90 + 'deg';
 			particle.position.z = Math.random() * 2000-1000;
 			particle.position.y = Math.random() * 2000-1000;
 			//particle.position.y = Math.random() * (1600-particle.position.z)-1000;
